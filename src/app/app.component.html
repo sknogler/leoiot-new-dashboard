@@ -1,8 +1,22 @@
 <h1>Dashboard</h1>
+<!--
 <nav>
   <a class="button" routerLink="/og107">og107</a> |
   <a class="button" routerLink="/ugk03">ugk03</a> |
   <a class="button" routerLink="/ugk04">ugk04</a>
 </nav>
 <router-outlet></router-outlet>
+-->
+
+<table id="room">
+  <tr>
+    <th>Noise</th>
+    <th>Temperature</th>
+    <th>Humidity</th>
+  </tr>
+  <tr>
+    <td *ngIf="true">{{noiseValue}}</td>
+    <td *ngIf="true">{{tempValue}}</td>
+    <td *ngIf="true">{{humidValue}}</td>
+  </tr>
 
