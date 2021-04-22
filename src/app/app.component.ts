@@ -32,21 +32,21 @@ export class AppComponent implements OnInit{
     // Noise observe
     this.mqttService.observe(this.noiseTopic).subscribe(data => {
       console.log(data.topic + ':');
-      this.noiseValue = data.payload.toLocaleString().split(',')[0];
+      this.noiseValue = data.payload.toString();
       console.log(this.noiseValue);
     });
 
     // Temperature observe
     this.mqttService.observe(this.tempTopic).subscribe(data => {
       console.log(data.topic + ':');
-      this.tempValue = data.payload.toLocaleString().split(',')[0];
+      this.tempValue = data.payload.toString();
       console.log(this.tempValue);
     });
 
     // Humidity observe
     this.mqttService.observe(this.humidTopic).subscribe(data => {
       console.log(data.topic + ':');
-      this.humidValue = data.payload.toLocaleString().split(',')[0];
+      this.humidValue = data.payload.toString();
       console.log(this.humidValue);
     });
   }
