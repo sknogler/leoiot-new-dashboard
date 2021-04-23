@@ -8,6 +8,7 @@ import {IMqttServiceOptions, MqttModule} from 'ngx-mqtt';
 import { Og107Component } from './og107/og107.component';
 import { Ugk03Component } from './ugk03/ugk03.component';
 import { Ugk04Component } from './ugk04/ugk04.component';
+import { RoomComponent } from './room/room.component';
 
 export const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
   hostname: 'localhost',
@@ -21,6 +22,7 @@ export const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
     Og107Component,
     Ugk03Component,
     Ugk04Component,
+    RoomComponent,
   ],
   imports: [
     BrowserModule,
